@@ -1,0 +1,229 @@
+<!-- I declare that the lab work here submitted is original
+except for source material explicitly acknowledged,
+and that the same or closely related material has not been
+previously submitted for another course.
+I also acknowledge that I am aware of University policy and
+regulations on honesty in academic work, and of the disciplinary
+guidelines and procedures applicable to breaches of such
+policy and regulations, as contained in the website.
+University Guideline on Academic Honesty:
+https://www.cuhk.edu.hk/policy/academichonesty/
+Student Name : Lam Hoi Chun
+Student ID : 1155192755
+Class/Section : CSCI2720
+Date : 16-10-2023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://www.parlons-basket.com/wp-content/uploads/2019/09/Symbol-Stephen-Curry.jpg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>About Stephen Curry</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top text-white" id="topnav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#resNav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="home.html">
+            <span class="material-symbols-outlined" style="color:black">sports_basketball</span> 
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="resNav">
+        <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav" id="topnav">
+            <li><a href="home.html" target="_blank" style="color:black">Home</a></li>
+            <li><a href="biography.html" target="_blank" style="color:black">Biography</a></li>
+            <li><a href="achievements.html" target="_blank" style="color:black">Achievements</a></li>
+            <li><a href="ff.html" target="_blank" style="color:black">Fun Facts</a></li>
+            <li><a href="docu.html" target="_blank" style="color:black">Documentary</a></li>
+            <li><a style="color:black" id="showhidebtn">Show</a></li>
+
+            <li class="extra-bar" style="display:none;"><a href="#" id="task1" onclick="changeAlignment()">Task 1</a></li>
+            <li class="extra-bar" style="display:none;"><a href="#" id="task2" onclick="addSpotlight()">Task 2</a></li>
+            <li class="extra-bar" style="display:none;"><a href="#" id="task3" onclick="toggleProgressBar()">Task 3</a></li>
+          </ul>
+        </ul>
+      </div>
+      <div class="progress fixed-top" id="progressBar" style="display:none;">
+        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      </div> 
+    </div>
+  </nav>     
+
+    <div class="container-fluid text-center main">    
+      <div class="text-left"> 
+        <h1>Biography</h1>
+        <h3>Early Life</h3>
+        <div class="textinfo">
+          <h5>Family</h5>
+          <aside>
+            <figure id="floatimg">
+                <img src="https://staticg.sportskeeda.com/editor/2021/11/27973-16379582609860-1920.jpg" alt="Stephen Curry in NCAA">
+            </figure>
+          </aside>
+          <p>
+          Curry is the son of Sonya and Dell Curry. He was born in Akron, Ohio, at Summa Akron City Hospital, while his father was a member of the Cleveland Cavaliers.
+          He grew up in Charlotte, North Carolina, where his father spent most of his NBA career with the Charlotte Hornets.
+          Dell often took Curry and his younger brother Seth to his games, where they would shoot with the Hornets during warm-ups. 
+          The family briefly moved to Toronto, where Dell finished out his career as a member of the Raptors.
+          </p>
+          <br>
+          <h5>College</h5>
+          <p>
+          During this time, Curry played for the Queensway Christian College boys' basketball team, leading them to an undefeated season. 
+          He was also a member of Toronto 5-0, a club team that plays across Ontario, pitting him against fellow future NBA players Cory Joseph and Kelly Olynyk.
+          Curry led the team to a 33–4 record, en route to winning the provincial championship.
+          </p>
+          <aside>
+            <figure id="floatimg">
+              <img src="https://i0.wp.com/elgurudelbasket.com/wp-content/uploads/2016/03/168298816-e1511200473906.jpg?resize=619%2C445&ssl=1" alt="Dell Curry">
+            </figure>
+          </aside> 
+          <br>
+          <h5>Father</h5>
+          <p>
+          Wardell Stephen Curry Sr. (born June 25, 1964) is an American former professional basketball player. 
+          He played in the National Basketball Association (NBA) from 1986 until 2002 
+          and retired as the Charlotte Hornets' all-time leader in points (9,839) and three-point field goals made (929).
+          Curry currently works as a color commentator, alongside Eric Collins, on Charlotte Hornets television broadcasts. 
+          He is the father of NBA players Stephen Curry and Seth Curry.  
+          </p>
+          <p>
+          After Dell's retirement, the family moved back to Charlotte and Curry enrolled at Charlotte Christian School, where he was named all-conference and all-state, 
+          and led his team to three conference titles and three state playoff appearances. Because of his father's storied career at Virginia Tech, 
+          Curry wanted to play college basketball for the Hokies, but was only offered a walk-on spot due in part to his slender 160-pound frame.
+          He ultimately chose to attend Davidson College, who had aggressively recruited him from the tenth grade.
+          </p>
+          <br>
+            
+        </div>
+          <h3>College career</h3>
+          <div class="textinfo">
+            <aside>
+              <figure id="floatimg">
+                <img src="https://cdn.vox-cdn.com/thumbor/sBTLgKBOIJSBd_khp-0s7d-hwlM=/1400x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/10421561/80421792.jpg.jpg" alt="Curry Freshman">
+              </figure>
+            </aside>
+            <h5>Freshman Season</h5>
+            <p>
+            In his first collegiate game against Eastern Michigan, Curry finished with 15 points but committed 13 turnovers. 
+            Curry finished the season leading the Southern Conference in scoring with 21.5 PPG. He was second in the nation among freshmen in scoring, behind only Kevin Durant of Texas. 
+            Curry's scoring helped the Wildcats to a 29–5 overall record and a Southern Conference regular-season title. 
+            On March 2, 2007, in the Southern Conference tournament semi-finals against Furman, Curry made his 113th three-point field goal of the year, 
+            breaking Keydren Clark's NCAA freshman season record for three-pointers.
+            </p>
+            <br>
+            <p>
+            Curry eclipsed the school freshman scoring record with his 502nd point against Chattanooga on February 6, 2007.
+            On March 15, 2007, Davidson marched into the NCAA tournament as a 13th seed set to play Maryland; despite Curry's game-high 30 points, Davidson lost 82–70.
+            At the end of his freshman season, Curry was named Southern Conference Freshman of the Year, SoCon Tournament MVP, and selected to the SoCon All-tournament team, 
+            All-freshman team, and All-SoCon First Team.
+            He was also an honorable mention in Sports Illustrated's All-Mid-Major. After the season ended, 
+            he was selected for the USA team to appear at the 2007 FIBA U19 World Championships in which he averaged 9.4 points, 3.8 rebounds, 
+            and 2.2 assists in 19.4 minutes, helping Team USA to a silver medal finish.
+            </p>
+            <br>
+            <p>
+            Curry became Davidson’s career leader in points and 3-pointers. 
+            The Wildcats made it to the tournament in his freshman and sophomore seasons, including a magical run to the round of 8 in 2008. 
+            Curry scored 40 points and made eight 3-pointers in a first-round upset of Gonzaga.
+            </p>
+            <br>
+          </div>
+        
+          <div>
+          <h3>Professional career</h3>
+          <div class="textinfo">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Event</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>2009</td>
+                    <td>Drafted 7th overall in NBA draft by the Golden State Warriors</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>2009-10</td>
+                    <td>Struggled early with injuries, played in just 26 games his rookie season</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>2012-13</td>
+                    <td>First breakout season: 22.9 points per game</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>2014-15</td>
+                    <td>Won first NBA championship and was named MVP</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>2015–16</td>
+                    <td>Unanimously voted as MVP again after leading Warriors to a record 73-9 regular season</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>2015–16</td>
+                    <td>Set new record for most 3-pointers made in a regular season (402), breaking his own previous record</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>2016-17</td>
+                    <td>Led Warriors to second straight NBA championship</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>2019-20</td>
+                    <td>Struggled with injuries, played just 5 games</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>2020-21</td>
+                    <td>Came back and led league in scoring (32 ppg) and set Warriors all-time scoring record</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>2021-22</td>
+                    <td>Won 4th NBA championship and 1st Finals MVP award</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">11</th>
+                    <td>2021-22</td>
+                    <td>Regarded as one of the greatest shooters in NBA history, has won 3 All-Star MVPs</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+<script src="script.js"></script>   
+
+</body>
+</html>

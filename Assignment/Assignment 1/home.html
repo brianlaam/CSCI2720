@@ -1,0 +1,183 @@
+<!-- I declare that the lab work here submitted is original
+except for source material explicitly acknowledged,
+and that the same or closely related material has not been
+previously submitted for another course.
+I also acknowledge that I am aware of University policy and
+regulations on honesty in academic work, and of the disciplinary
+guidelines and procedures applicable to breaches of such
+policy and regulations, as contained in the website.
+University Guideline on Academic Honesty:
+https://www.cuhk.edu.hk/policy/academichonesty/
+Student Name : Lam Hoi Chun
+Student ID : 1155192755
+Class/Section : CSCI2720
+Date : 16-10-2023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://www.parlons-basket.com/wp-content/uploads/2019/09/Symbol-Stephen-Curry.jpg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <title>About Stephen Curry</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top text-white" id="topnav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#resNav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="home.html">
+            <span class="material-symbols-outlined" style="color:black">sports_basketball</span> 
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="resNav">
+        <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav" id="topnav">
+            <li><a href="home.html" target="_blank" style="color:black">Home</a></li>
+            <li><a href="biography.html" target="_blank" style="color:black">Biography</a></li>
+            <li><a href="achievements.html" target="_blank" style="color:black">Achievements</a></li>
+            <li><a href="ff.html" target="_blank" style="color:black">Fun Facts</a></li>
+            <li><a href="docu.html" target="_blank" style="color:black">Documentary</a></li>
+            <li><a style="color:black" id="showhidebtn">Show</a></li>
+
+            <li class="extra-bar" style="display:none;"><a href="#" id="task1" onclick="changeAlignment()">Task 1</a></li>
+            <li class="extra-bar" style="display:none;"><a href="#" id="task2" onclick="addSpotlight()">Task 2</a></li>
+            <li class="extra-bar" style="display:none;"><a href="#" id="task3" onclick="toggleProgressBar()">Task 3</a></li>
+          </ul>
+        </ul>
+      </div>
+      <div class="progress fixed-top" id="progressBar" style="display:none;">
+        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      </div> 
+    </div>
+  </nav>  
+
+  <div class="container-fluid text-center main">    
+    <div class="row content">
+      <div class="col-sm-4 col-lg-3 sidenav">
+        <br>
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/TechCrunch_Disrupt_2019_%2848834853256%29_%281%29.jpg/330px-TechCrunch_Disrupt_2019_%2848834853256%29_%281%29.jpg">
+          <figcaption class="caption">Stephen Curry in 2019</figcaption>
+        </figure>
+        <p><a href="https://en.wikipedia.org/wiki/Stephen_Curry" target="_blank">Wikipedia</a></p>
+      </div>
+
+      <div class="col-sm-8 col-lg-9 text-left"> 
+      <h1>Home</h1>
+      <h3>Basic Information</h3>
+
+      <pre class="textinfo">
+      <h5>Personal information</h5>
+      Name: Stephen Curry
+      Born Date: March 14, 1988 (Age 35)
+      Born in: Akron, Ohio, U.S.
+      Height: 6 ft 2 in (1.88 m)
+      Weight: 185 lb (84 kg)
+      <br>
+      <h5>Before NBA</h5>
+      Position: Point guard
+      High school: Charlotte Christian 
+      College: Davidson (2006 – 2009)
+      <br>
+      <h5>In NBA</h5>
+      NBA draft 2009: 1st round, 7th pick
+      Selected by the Golden State Warriors
+      Jersey No. 30
+      Playing career: 2009 – Present 
+      Team: Golden State Warriors
+      </pre>
+
+      <div class="textinfo">
+        <p>
+          <h5>Spotlight</h5><br>
+          <ol id="spotlightList" type="I">
+            <li>Breaking All Time 3 Point Record</li>
+            <li>54 points at Madison Square Garden</li>
+            <li>Game winner vs. Oklahoma City Thunder</li>
+          </ol>
+        </p>          
+      </div>
+
+      <h3 class="mb-4">Comments</h3>
+      <div>
+        <div id="comments"> 
+          <div id="c1001" class="d-flex"> <!-- flex layout -->
+            <div class="flex-shrink-0"> <!-- disallow div to shrink when page gets smaller -->
+              <svg height="100" width="100">
+                <circle cx="50" cy="50" r="40" fill="green">
+              </circle></svg>
+            </div>
+            <div class="flex-grow-1">
+              <h5>curryfans@gmail.com</h5>
+              <p>Curry is the GOAT!</p>
+            </div>
+          </div>
+        </div>
+        
+        <h3 class="mb-4">Add your comment</h3>
+
+        <form>
+        <div class="mb-3">
+          <label for="new-email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="new-email" placeholder="name@example.com">
+        </div>
+        <br>
+        <div class="mb-3">
+          <label for="new-comment" class="form-label">Comment</label>
+          <textarea class="form-control" id="new-comment" rows="3" placeholder="Your thoughts..."></textarea>
+        </div>
+        <span class="form-check formspan">
+            <input class="form-check-input " type="radio" name="new-color" id="new-color-red" value="red">
+            <label class="form-check-label" for="new-color-red">Red</label>
+        </span>
+        <span class="form-check formspan">
+            <input class="form-check-input" type="radio" name="new-color" id="new-color-blue" value="blue">
+            <label class="form-check-label" for="new-color-blue">Blue</label>
+        </span>
+        <span class="form-check formspan">
+            <input class="form-check-input" type="radio" name="new-color" id="new-color-yellow" value="yellow">
+            <label class="form-check-label" for="new-color-yellow">Yellow</label>
+        </span>
+        <span class="form-check formspan">
+            <input class="form-check-input" type="radio" name="new-color" id="new-color-pink" value="pink">
+            <label class="form-check-label" for="new-color-pink">Pink</label>
+        </span>
+        <div>
+          <label for="new-color-picker" class="form-label">Or choose your own color</label>
+          <input type="color" class="form-control" id="new-color-picker" value="#0373fc">
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary" onclick="processform()">Add comment</button>
+        <button type="button" class="btn btn-primary" onclick="loadfile()">Load File</button>
+        <button type="button" class="btn btn-primary" onclick="savefile()">Save File</button>
+        <br><br>
+        </form>
+      </div>
+
+    </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

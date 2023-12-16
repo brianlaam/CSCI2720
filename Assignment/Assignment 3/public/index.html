@@ -1,0 +1,58 @@
+<!-- I declare that the lab work here submitted is original
+except for source material explicitly acknowledged,
+and that the same or closely related material has not been
+previously submitted for another course.
+I also acknowledge that I am aware of University policy and
+regulations on honesty in academic work, and of the disciplinary
+guidelines and procedures applicable to breaches of such
+policy and regulations, as contained in the website.
+University Guideline on Academic Honesty:
+https://www.cuhk.edu.hk/policy/academichonesty/
+Student Name : Lam Hoi Chun
+Student ID : 1155192755
+Class/Section : CSCI2720
+Date : 14-12-2023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="http://server-address/ev" method="POST" id="myForm">
+    <label for="eventName">Event Name:</label><br>
+    <input type="text" id="eventName" name="name"><br>
+    <label for="locationId">Location ID:</label><br>
+    <input type="text" id="locationId" name="loc"><br>
+    <label for="eventQuota">Event Quota:</label><br>
+    <input type="number" id="eventQuota" name="quota"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    document.getElementById('myForm').addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const loginID = document.getElementById('locationId').value;
+      const data = {
+        locationId: locationId
+      };
+
+      const response = await fetch('http://localhost:3000/ev', { 
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      const resultPage = await response.text();
+      document.open();
+      document.write(resultPage);
+      document.close();
+    });
+    
+  </script>
+</body>
+</html>

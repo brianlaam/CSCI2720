@@ -1,0 +1,166 @@
+/*  I declare that the lab work here submitted is original
+except for source material explicitly acknowledged,
+and that the same or closely related material has not been
+previously submitted for another course.
+I also acknowledge that I am aware of University policy and
+regulations on honesty in academic work, and of the disciplinary
+guidelines and procedures applicable to breaches of such
+policy and regulations, as contained in the website.
+University Guideline on Academic Honesty:
+https://www.cuhk.edu.hk/policy/academichonesty/
+Student Name : Lam Hoi Chun
+Student ID : 1155192755
+Class/Section : CSCI2720
+Date : 16-10-2023 */
+
+body{
+    padding-top: 50px;
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    background-color: #1D428A;
+    color:white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:#FFC72C ;
+    padding: 5px;  
+    text-align: center;
+    font-family:"Young Serif";
+}
+
+h3{
+    background-color: #1D428A;
+    color:white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:#FFC72C ;
+    padding: 5px;  
+    text-align: center;
+    font-family:"Young Serif";
+}
+
+h5{
+    font-size: larger;
+    color:brown;
+}
+
+#navlogo{
+    width: 50px;
+    height: 50px;
+}
+
+#floatimg{
+    float:right;
+}
+
+#topnav{
+    background-color:lightsteelblue;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#topnav a:hover{
+    background-color: rgb(142, 147, 99);
+}
+
+#commentDiv{
+    background-color:rgb(209, 244, 246);
+}
+
+#comments{
+    border: #1D428A;
+    border-radius: 5px;
+    border-style: dashed;
+    background-color: rgb(209, 196, 232);
+}
+
+#new-color-picker {
+    width: 40px;
+    height: 40px;
+    display: inline;
+}
+
+.formElement{
+    background-color:rgb(186, 211, 187);
+}
+
+.textinfo{
+    background-color: antiquewhite;
+    border-style:double;
+    border-radius: 10px;
+    border-width: 7px;
+    border-color:darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    padding:30px;
+}
+
+.main {
+    padding-top: 20px;
+}
+
+.caption{
+    font-size: 16px;
+    color:black;
+}
+
+.des-p{
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+.yt-link{
+    max-width: 100%;
+    height: auto;
+}
+
+.d-flex{
+    display:flex;
+    align-items: center;
+}
+
+.formspan{
+    margin: 10px;
+}
+
+/* Responsive Web Design (breakpoints) */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    img {width: 55%;}
+    #floatimg{width: 50%; height:auto}
+    .yt-link{width: 300px; height:auto}
+}
+  
+/* Medium devices (tablets, 768px and up) */  
+@media (min-width: 768px) {
+    img {width: 49%;}
+    #floatimg{width: 45%; height:auto}
+    .yt-link{ width: 400px; height: 300px}
+}
+  
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    img {width: 49%;}
+    #floatimg{width: 40%; height:auto}
+    .yt-link{width: 400px; height: 300px}
+}
+  
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    img {width: 49%;}
+    #floatimg{width: 35%; height:auto}
+    .yt-link{width: 400px; height: 300px}    
+}
+  
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    img {width: 700px;} 
+    #floatimg{width: 22%; height:22%}
+    .yt-link{width: 400px; height: 300px}
+}

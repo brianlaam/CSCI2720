@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "6568b376a4240a25e022452e"
+  },
+  "eventId": 1,
+  "name": "Event 1",
+  "quota": 100,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "656c82dd9152901c6af60fbf"
+  },
+  "eventId": 2,
+  "name": "Event 2",
+  "quota": 50
+}]

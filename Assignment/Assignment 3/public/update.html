@@ -1,0 +1,48 @@
+<!-- I declare that the lab work here submitted is original
+except for source material explicitly acknowledged,
+and that the same or closely related material has not been
+previously submitted for another course.
+I also acknowledge that I am aware of University policy and
+regulations on honesty in academic work, and of the disciplinary
+guidelines and procedures applicable to breaches of such
+policy and regulations, as contained in the website.
+University Guideline on Academic Honesty:
+https://www.cuhk.edu.hk/policy/academichonesty/
+Student Name : Lam Hoi Chun
+Student ID : 1155192755
+Class/Section : CSCI2720
+Date : 14-12-2023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Event Information</title>
+</head>
+<body>
+  <h1>Update Event Information</h1>
+  <form id="updateEventForm" method="PUT" action="/ev/">
+    <label for="eventId">Event ID:</label>
+    <input type="number" id="eventId" name="eventId" required><br><br>
+    <label for="eventName">Event Name:</label>
+    <input type="text" id="eventName" name="eventName" required><br><br>
+    <input type="submit" value="Update Event">
+  </form>
+  
+  <div id="eventDetails"></div>
+
+  <script>
+    document.getElementById('updateEventForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const eventId = document.getElementById('eventId').value;
+
+      fetch(`/ev/${eventId}`)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('eventDetails').innerHTML = data;
+        })
+        .catch(error => console.error('Error:', error));
+    });
+  </script>
+</body>
+</html>
