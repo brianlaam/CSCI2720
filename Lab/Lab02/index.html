@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code</title>
+</head>
+<body>
+    <script>
+        // Your JavaScript code here
+        const a = ["red", "pink", "green"];
+        console.log(a);
+
+        a.splice(1, 1, "orange", "yellow");
+        console.log(a);
+
+        color = prompt("What is your favorite color?");
+        a.push(color);
+        console.log(a);
+
+        let a_sorted = a.slice().sort();
+        console.log(a);
+        console.log(a_sorted);
+
+        for(let c of a_sorted){
+            document.write(c + "<br>");
+        }
+    </script>
+</body>
+</html>

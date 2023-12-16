@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSCI2720</title>
+  <style>
+    /* CSS styling */
+    #title {
+      color: blue;
+    }
+
+    #paragraph {
+      font-size: 18px;
+    }
+
+    #textInput {
+      border: 1px solid gray;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h3 id="title">Lab 02</h3>
+  <p id="paragraph">Task 04</p>
+  <input type="text" id="textInput">
+  <button type="button" id="submitButton">Click Me</button>
+
+  <script>
+    // JavaScript code
+    let titleElement = document.getElementById("title");
+    let paragraphElement = document.getElementById("paragraph");
+    let textInputElement = document.getElementById("textInput");
+    let submitButtonElement = document.getElementById("submitButton");
+
+    console.log(titleElement.innerHTML);
+    console.log(paragraphElement.innerHTML);
+    console.log(textInputElement.innerHTML);
+    console.log(submitButtonElement.innerHTML);
+  </script>
+</body>
+</html>
