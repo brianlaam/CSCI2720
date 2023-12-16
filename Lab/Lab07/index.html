@@ -1,0 +1,43 @@
+<html>
+    <head>
+    <title>Post Form</title>
+    </head>
+  
+    <body data-new-gr-c-s-check-loaded="14.1046.0" data-gr-ext-installed="">
+    <p>Click the submit button to send a request to the server</p>
+    <form id="myForm">
+      <label for="loginID">Login ID:</label>
+      <input type="text" id="loginID" name="loginID">
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  
+    <script>
+      // prepare the data in JSON format
+      document.getElementById('myForm').addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const loginID = document.getElementById('loginID').value;
+        const data = {
+          loginID: loginID
+        };
+  
+        // use POST method to send a request to the server
+        const response = await fetch('http://localhost:3000/event/123/loc/2000', { //put your server address here
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+  
+        // render a new page if a response is received
+        const resultPage = await response.text();
+        document.open();
+        document.write(resultPage);
+        document.close();
+      });
+      
+    </script>
+  
+  </body>
+</html>
